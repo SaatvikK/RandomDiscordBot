@@ -48,10 +48,13 @@ client.on('message', msg => { //This event will trigger when any member of any g
   if(command === "help") { //Checking if command == "help"
     client.commands.get('help').execute(msg, args, prefix); //Executing the help.js file.
   }
-  //add a new command by:
-  //if(command === "xyz") {
-    //client.commands.get("xyz").execute(msg, args);
-  //}
+/*
+  add a new command by:
+  if(command === "xyz") {
+    client.commands.get("xyz").execute(msg, args);
+  }
+  Note: you'd first have to make the xyz.js file in the "commands" folder.
+  */
 });
 
 //Embed function for general use. This embed can be used for most situations unless you want to add a picture, or fields.
